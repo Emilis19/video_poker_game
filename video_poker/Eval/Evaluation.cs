@@ -4,9 +4,9 @@ using System.Text;
 using System.Linq;
 namespace video_poker
 {
-    public static class Evaluation
+    public class Evaluation
     {
-        public static string Evaluate(List<Card> hand)
+        public string Evaluate(List<Card> hand)
         {
             if (IsFlush(hand))
             {
@@ -44,13 +44,13 @@ namespace video_poker
         }
 
 
-        public static bool IsFlush(List<Card> hand)
+        public bool IsFlush(List<Card> hand)
         {
             return hand.GroupBy(h => h.Suit).Count() == 1;
         }
 
 
-        public static bool IsStraight(List<Card> hand)
+        public bool IsStraight(List<Card> hand)
         {
             var ordered = hand.OrderBy(h => h.Value).ToArray();
             for (int i = 1; i < ordered.Length; i++)
@@ -61,37 +61,37 @@ namespace video_poker
             return true;
         }
 
-        public static bool IsStraightFlush(List<Card> hand)
+        public bool IsStraightFlush(List<Card> hand)
         {
             return IsStraight(hand) && IsFlush(hand);
         }
 
-        public static bool IsRoyalFlush(List<Card> hand)
+        public bool IsRoyalFlush(List<Card> hand)
         {
             var ordered = hand.OrderBy(h => h.Value).ToArray();
             return IsStraightFlush(hand) && ordered[0].Value.Equals(Value.ten) && ordered[4].Value.Equals(Value.ace);
         }
 
-        public static bool IsPair(List<Card> hand)
+        public bool IsPair(List<Card> hand)
         {
             return hand.GroupBy(h => h.Value).Where(g => g.Count() == 2).Count() == 1;
         }
 
-        public static bool IsTwoPair(List<Card> hand)
+        public bool IsTwoPair(List<Card> hand)
         {
                 return hand.GroupBy(h => h.Value).Where(g => g.Count() == 2).Count() == 2;
         }
 
-        public static bool IsThreeOfAKind(List<Card> hand)
+        public bool IsThreeOfAKind(List<Card> hand)
         {
             return hand.GroupBy(h => h.Value).Where(g => g.Count() == 3).Any();
         }
 
-        public static bool IsFourOfAKind(List<Card> hand)
+        public bool IsFourOfAKind(List<Card> hand)
         {
             return hand.GroupBy(h => h.Value).Where(g => g.Count() == 4).Any();
         }
-        public static bool IsFullHouse(List<Card> hand)
+        public bool IsFullHouse(List<Card> hand)
         {
            // return IsThreeOfAKind(hand) && IsPair(hand);
 
@@ -100,10 +100,10 @@ namespace video_poker
             return (count1 == 3 && count2 == 2) || (count1 == 2 && count2 == 3);
         }
 
-        public static bool IsJacksOrBetter(List<Card> hand)
+        public bool IsJacksOrBetter(List<Card> hand)
         {
-            //group by value and check if the key value is greater than 10 (ten = 10 in enum) then check if there is only one pair of those values
-          return hand.GroupBy(h => h.Value).Where(h => (int)h.Key > 10).Where(g => g.Count() == 2).Count() == 1;          
+             //group by value and check if the key value is greater than 10 (ten = 10 in enum) then check if there is only one pair of those values
+             return hand.GroupBy(h => h.Value).Where(h => (int)h.Key > 10).Where(g => g.Count() == 2).Count() == 1; 
         }
     }
 }

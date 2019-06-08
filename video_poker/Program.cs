@@ -49,7 +49,7 @@ namespace video_poker
                                         logic.ReplaceCards(indexes);
                                         Console.WriteLine("Changed\n");
                                         logic.PrintHand();
-                                        Console.WriteLine("\n"+logic.PrintPrize());                              
+                                        Console.WriteLine("\n Your score "+logic.PrintPrize());                              
                                 }
                                 else
                                 {

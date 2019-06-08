@@ -8,13 +8,16 @@ namespace video_poker
     {
         public List<Card> deck { get; private set; }
         public List<Card> hand { get; private set; } = new List<Card>();
+        public Evaluation evaluation { get; set; }
 
         private Random random = new Random();
 
 
         public Logic()
         {
-            deck = Deck.CreateDeck();          
+            deck = Deck.CreateDeck();
+            Evaluation evaluation = new Evaluation();
+            this.evaluation = evaluation;
         }
 
      /*   public void Shuffle()
@@ -70,7 +73,7 @@ namespace video_poker
           */
         public String PrintPrize()
         {
-            return Evaluation.Evaluate(hand);
+            return evaluation.Evaluate(hand);
         }
     }
 }
