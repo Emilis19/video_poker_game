@@ -102,8 +102,8 @@ namespace video_poker
 
         public bool IsJacksOrBetter(List<Card> hand)
         {
-             //group by value and check if the key value is greater than 10 (ten = 10 in enum) then check if there is only one pair of those values
-             return hand.GroupBy(h => h.Value).Where(h => (int)h.Key > 10).Where(g => g.Count() == 2).Count() == 1; 
+            //group by value and check if the key value is greater than 10 (ten = 10 in enum) then check if there is only one pair of those values
+            return hand.GroupBy(h => h.Value).Where(h => (int)h.Key > 10).Where(g => g.Count() == 2).Count() == 1;
         }
     }
 }

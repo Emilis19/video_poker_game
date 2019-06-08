@@ -1,0 +1,17 @@
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\VideoPokerTests.deps.json
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\VideoPokerTests.runtimeconfig.json
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\VideoPokerTests.runtimeconfig.dev.json
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\VideoPokerTests.dll
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\VideoPokerTests.pdb
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\video_poker.dll
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\bin\Debug\netcoreapp2.2\video_poker.pdb
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\obj\Debug\netcoreapp2.2\VideoPokerTests.csprojAssemblyReference.cache
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\obj\Debug\netcoreapp2.2\VideoPokerTests.csproj.CoreCompileInputs.cache
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\obj\Debug\netcoreapp2.2\VideoPokerTests.AssemblyInfoInputs.cache
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\obj\Debug\netcoreapp2.2\VideoPokerTests.AssemblyInfo.cs
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\obj\Debug\netcoreapp2.2\VideoPokerTests.csproj.CopyComplete
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\obj\Debug\netcoreapp2.2\VideoPokerTests.dll
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\VideoPokerTests\obj\Debug\netcoreapp2.2\VideoPokerTests.pdb

@@ -1,0 +1,11 @@
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\bin\Debug\netcoreapp2.2\video_poker.deps.json
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\bin\Debug\netcoreapp2.2\video_poker.runtimeconfig.json
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\bin\Debug\netcoreapp2.2\video_poker.runtimeconfig.dev.json
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\bin\Debug\netcoreapp2.2\video_poker.dll
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\bin\Debug\netcoreapp2.2\video_poker.pdb
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\obj\Debug\netcoreapp2.2\video_poker.csprojAssemblyReference.cache
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\obj\Debug\netcoreapp2.2\video_poker.csproj.CoreCompileInputs.cache
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\obj\Debug\netcoreapp2.2\video_poker.AssemblyInfoInputs.cache
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\obj\Debug\netcoreapp2.2\video_poker.AssemblyInfo.cs
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\obj\Debug\netcoreapp2.2\video_poker.dll
+C:\Users\Emilis\Desktop\video_poker_game\video_poker_game\video_poker\obj\Debug\netcoreapp2.2\video_poker.pdb
