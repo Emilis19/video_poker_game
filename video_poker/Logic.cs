@@ -16,8 +16,7 @@ namespace video_poker
         public Logic()
         {
             deck = Deck.CreateDeck();
-            Evaluation evaluation = new Evaluation();
-            this.evaluation = evaluation;
+            this.evaluation = new Evaluation();
         }
 
      /*   public void Shuffle()
