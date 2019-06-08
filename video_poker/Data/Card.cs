@@ -30,8 +30,8 @@ namespace video_poker
 {
     public class Card
     {
-        public Suit Suit { get; set; }
-        public Value Value { get; set; }
+        public Suit Suit { get; private set; }
+        public Value Value { get; private set; }
 
         public Card(Suit suit, Value value)
         {
