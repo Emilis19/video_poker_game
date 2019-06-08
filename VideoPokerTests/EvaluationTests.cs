@@ -43,7 +43,18 @@ namespace VideoPokerTests
             bool actual = Evaluation.IsStraightFlush(hand);
             Assert.AreEqual(true, actual);
         }
-
+        [TestMethod]
+        public void StraightFlushFalse()
+        {
+            List<Card> hand = new List<Card>();
+            hand.Add(new Card(Suit.diamonds, Value.two));
+            hand.Add(new Card(Suit.diamonds, Value.three));
+            hand.Add(new Card(Suit.clubs, Value.four));
+            hand.Add(new Card(Suit.hearts, Value.five));
+            hand.Add(new Card(Suit.diamonds, Value.six));
+            bool actual = Evaluation.IsStraightFlush(hand);
+            Assert.AreEqual(false, actual);
+        }
         [TestMethod]
         public void Straight()
         {
@@ -56,7 +67,18 @@ namespace VideoPokerTests
             bool actual = Evaluation.IsStraight(hand);
             Assert.AreEqual(true, actual);
         }
-
+        [TestMethod]
+        public void StraightFalse()
+        {
+            List<Card> hand = new List<Card>();
+            hand.Add(new Card(Suit.diamonds, Value.ace));
+            hand.Add(new Card(Suit.hearts, Value.two));
+            hand.Add(new Card(Suit.hearts, Value.queen));
+            hand.Add(new Card(Suit.clubs, Value.ten));
+            hand.Add(new Card(Suit.spades, Value.jack));
+            bool actual = Evaluation.IsStraight(hand);
+            Assert.AreEqual(false, actual);
+        }
         [TestMethod]
         public void Flush()
         {
@@ -70,6 +92,18 @@ namespace VideoPokerTests
             Assert.AreEqual(true, actual);
         }
         [TestMethod]
+        public void FlushFalse()
+        {
+            List<Card> hand = new List<Card>();
+            hand.Add(new Card(Suit.diamonds, Value.two));
+            hand.Add(new Card(Suit.clubs, Value.ten));
+            hand.Add(new Card(Suit.hearts, Value.jack));
+            hand.Add(new Card(Suit.diamonds, Value.five));
+            hand.Add(new Card(Suit.diamonds, Value.ace));
+            bool actual = Evaluation.IsFlush(hand);
+            Assert.AreEqual(false, actual);
+        }
+        [TestMethod]
         public void TwoPair()
         {
             List<Card> hand = new List<Card>();
@@ -80,6 +114,18 @@ namespace VideoPokerTests
             hand.Add(new Card(Suit.spades, Value.three));
             bool actual = Evaluation.IsTwoPair(hand);
             Assert.AreEqual(true, actual);
+        }
+        [TestMethod]
+        public void TwoPairFalse()
+        {
+            List<Card> hand = new List<Card>();
+            hand.Add(new Card(Suit.diamonds, Value.ace));
+            hand.Add(new Card(Suit.hearts, Value.ace));
+            hand.Add(new Card(Suit.clubs, Value.ace));
+            hand.Add(new Card(Suit.clubs, Value.five));
+            hand.Add(new Card(Suit.spades, Value.three));
+            bool actual = Evaluation.IsTwoPair(hand);
+            Assert.AreEqual(false, actual);
         }
         [TestMethod]
         public void TwoPairHighCards()
@@ -104,6 +150,18 @@ namespace VideoPokerTests
             hand.Add(new Card(Suit.diamonds, Value.jack));
             bool actual = Evaluation.IsThreeOfAKind(hand);
             Assert.AreEqual(true, actual);
+        }
+        [TestMethod]
+        public void ThreeOfAKindFalse()
+        {
+            List<Card> hand = new List<Card>();
+            hand.Add(new Card(Suit.diamonds, Value.five));
+            hand.Add(new Card(Suit.clubs, Value.five));
+            hand.Add(new Card(Suit.spades, Value.five));
+            hand.Add(new Card(Suit.hearts, Value.five));
+            hand.Add(new Card(Suit.diamonds, Value.jack));
+            bool actual = Evaluation.IsThreeOfAKind(hand);
+            Assert.AreEqual(false, actual);
         }
         [TestMethod]
         public void FullHouse()
@@ -140,6 +198,18 @@ namespace VideoPokerTests
             hand.Add(new Card(Suit.diamonds, Value.jack));
             bool actual = Evaluation.IsFourOfAKind(hand);
             Assert.AreEqual(true, actual);
+        }
+        [TestMethod]
+        public void FourOfAKindFalse()
+        {
+            List<Card> hand = new List<Card>();
+            hand.Add(new Card(Suit.diamonds, Value.three));
+            hand.Add(new Card(Suit.spades, Value.seven));
+            hand.Add(new Card(Suit.hearts, Value.three));
+            hand.Add(new Card(Suit.clubs, Value.three));
+            hand.Add(new Card(Suit.diamonds, Value.jack));
+            bool actual = Evaluation.IsFourOfAKind(hand);
+            Assert.AreEqual(false, actual);
         }
         [TestMethod]
         public void JacksOrBetterFalse()
