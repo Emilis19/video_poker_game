@@ -40,7 +40,7 @@ namespace video_poker
                                     Regex regex = new Regex(@"^[0-4]\s?([0-4]\s*)*$");
                                     Console.WriteLine("\nInput the indexes of the cards you want to replace (use spaces)");
                                     var replaceInput = Console.ReadLine();
-                                    while (!regex.IsMatch(replaceInput))
+                                    while (!regex.IsMatch(replaceInput) || replaceInput.Length > 9)
                                     {
                                         Console.WriteLine("Are you even trying");
                                         replaceInput = Console.ReadLine();
