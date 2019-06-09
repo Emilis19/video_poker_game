@@ -296,6 +296,19 @@ namespace VideoPokerTests
             Assert.AreEqual(false, actual);
         }
         [TestMethod]
+        public void JacksOrBetterFalse4()
+        {
+            List<Card> hand = new List<Card>();
+            hand.Add(new Card(Suit.diamonds, Value.queen));
+            hand.Add(new Card(Suit.clubs, Value.queen));
+            hand.Add(new Card(Suit.hearts, Value.jack));
+            hand.Add(new Card(Suit.spades, Value.jack));
+            hand.Add(new Card(Suit.hearts, Value.two));
+            Evaluation evaluation = new Evaluation();
+            bool actual = evaluation.IsJacksOrBetter(hand);
+            Assert.AreEqual(false, actual);
+        }
+        [TestMethod]
         public void ThreePairString()
         {
             List<Card> hand = new List<Card>();
@@ -389,6 +402,34 @@ namespace VideoPokerTests
             Evaluation evaluation = new Evaluation();
             var actual = evaluation.Evaluate(hand);
             Assert.AreEqual("You have a royal flush! Prize: 800", actual);
+
+        }
+        [TestMethod]
+        public void JacksString()
+        {
+            List<Card> hand = new List<Card>();
+            hand.Add(new Card(Suit.diamonds, Value.king));
+            hand.Add(new Card(Suit.clubs, Value.queen));
+            hand.Add(new Card(Suit.hearts, Value.two));
+            hand.Add(new Card(Suit.diamonds, Value.three));
+            hand.Add(new Card(Suit.clubs, Value.queen));
+            Evaluation evaluation = new Evaluation();
+            var actual = evaluation.Evaluate(hand);
+            Assert.AreEqual("You have jacks or better! Prize: 1", actual);
+
+        }
+        [TestMethod]
+        public void NothingString()
+        {
+            List<Card> hand = new List<Card>();
+            hand.Add(new Card(Suit.diamonds, Value.king));
+            hand.Add(new Card(Suit.clubs, Value.queen));
+            hand.Add(new Card(Suit.hearts, Value.two));
+            hand.Add(new Card(Suit.diamonds, Value.three));
+            hand.Add(new Card(Suit.clubs, Value.five));
+            Evaluation evaluation = new Evaluation();
+            var actual = evaluation.Evaluate(hand);
+            Assert.AreEqual("Sorry but you have nothing. Prize: 0", actual);
 
         }
     }
